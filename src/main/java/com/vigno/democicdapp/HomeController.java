@@ -20,7 +20,7 @@ public class HomeController {
 	
 	@RequestMapping("/")
 	public String home(Model model) {
-		
+		System.out.println("Dev2_Test2");
 		model.addAttribute("version", version+"-"+buildProperties.get("buildNumber"));
 		model.addAttribute("color", calculateColor());
 		return "index";
